@@ -11,7 +11,7 @@ var directionsService;
 var directionsRenderer;
 
 function initMap() {
-    var zagreb = { lat: 45.8131, lng: 15.9770 }; // Koordinate Zagreba
+    var zagreb = { lat: 45.8131, lng: 15.9770 }; 
     map = new google.maps.Map(document.getElementById('map'), {
         center: zagreb,
         zoom: 12
@@ -20,16 +20,14 @@ function initMap() {
     directionsService = new google.maps.DirectionsService();
     directionsRenderer = new google.maps.DirectionsRenderer();
 
-    // Dodavanje markera za svaku lokaciju
     locations.forEach(function (location) {
         var marker = new google.maps.Marker({
             position: { lat: location.lat, lng: location.lng },
             map: map,
             title: location.name,
-            icon: 'pin/ikona.png', // Postavite putanju do vaše prilagođene ikone
+            icon: 'pin/ikona.png', 
         });
 
-        // Dodavanje informacija o lokaciji prilikom klika na marker
         var infowindow = new google.maps.InfoWindow({
             content: location.name
         });
