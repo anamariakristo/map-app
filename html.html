@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Zagreb Map</title>
+</head>
+<body>
+    <div id="map"></div>
+    <div>
+        <label for="startLocation">Odaberi početnu lokaciju:</label>
+        <select id="startLocation">
+            <option value="Autobusni kolodvor">Autobusni kolodvor</option>
+            <option value="Glavni kolodvor">Glavni kolodvor</option>
+            <option value="Park Maksimir">Park Maksimir</option>
+            <option value="Trg bana Josipa Jelačića">Trg bana Josipa Jelačića</option>
+            <option value="Park Ribnjak">Park Ribnjak</option>
+        </select>
+    </div>
+    <div>
+        <label for="endLocation">Odaberi krajnju lokaciju:</label>
+        <select id="endLocation">
+            <option value="Autobusni kolodvor">Autobusni kolodvor</option>
+            <option value="Glavni kolodvor">Glavni kolodvor</option>
+            <option value="Park Maksimir">Park Maksimir</option>
+            <option value="Trg bana Josipa Jelačića">Trg bana Josipa Jelačića</option>
+            <option value="Park Ribnjak">Park Ribnjak</option>
+        </select>
+    </div>
+    <button onclick="showRoute()">Prikaži rutu</button>
+    <script src="apl.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Xa7mUyPR_NiQL6fOTrbF0NrgXSyAeJU&callback=initMap"></script>
+</body>
+</html>

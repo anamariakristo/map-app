@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 400px;
+}
+
+select, button {
+    margin-top: 10px;
+}
